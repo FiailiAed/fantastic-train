@@ -18,6 +18,10 @@
       "dest": "/api/tutorial.php"
     },
     {
+      "src": "/players",
+      "dest": "/api/players.php"
+    },
+    {
       "src": "/public/(.*)",
       "dest": "/$1"
     }

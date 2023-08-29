@@ -4,5 +4,8 @@
   $dotenv->safeLoad();
 
   use BaseView\Base as BaseView;
-  new BaseView(null, null);
+  use Views\PlayersView as Players;
+
+  $playersBtnHtml = new Players();
+  new BaseView(null, $playersBtnHtml->render());
 ?>
