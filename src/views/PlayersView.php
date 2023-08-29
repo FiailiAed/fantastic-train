@@ -12,10 +12,10 @@ class PlayersView {
 	private function view() {
 		$htmlView = <<<HTML
 		<div id="players-div" class="text-center">
-			<button hx-post="/players"
+			<button hx-post="/api/players"
 				hx-trigger="click"
 				hx-target="#players-div"
-				hx-swap="outerHTML"
+				hx-swap="innerHTML"
 			>
 				Show Coaches
 			</button>

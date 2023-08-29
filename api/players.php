@@ -24,7 +24,7 @@ if ($result->num_rows > 0) {
 	}
 }
 
-$tableHeaders .= <<<HTML
+$tableHeaders = <<<HTML
 <tr>
 	<th>Name</th>
 	<th>Position</th>
@@ -35,16 +35,16 @@ $tableHeaders .= <<<HTML
 </tr>
 HTML;
 
-$technologyTableRows = "";
+$tableRows = "";
 foreach ($resultArr as $player) {
 	$tableRows .= <<<HTML
 <tr>
-	<td>{$tech['name']}</td>
-	<td>{$tech['position']}</td>
-	<td>{$tech['number']}</td>
-	<td>{$tech['strong_hand']}</td>
-	<td>{$tech['age']}</td>
-	<td>{$tech['grade']}</td>
+	<td>{$player['name']}</td>
+	<td>{$player['position']}</td>
+	<td>{$player['number']}</td>
+	<td>{$player['strong_hand']}</td>
+	<td>{$player['age']}</td>
+	<td>{$player['grade']}</td>
 </tr>
 HTML;
 }
