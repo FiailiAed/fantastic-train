@@ -5,5 +5,16 @@
     "license": "MIT",
     "require": {
         "vlucas/phpdotenv": "^5.5"
-    }
+    },
+	"autoload": {
+		"psr-4": {
+			"Base\\":"src/base",
+			"BaseModel\\":"src/base/m",
+			"BaseView\\":"src/base/v",
+			"BaseController\\":"src/base/c",
+			"Models\\":"src/models",
+			"Views\\":"src/views",
+			"Controllers\\":"src/controllers"
+		}
+	}
 }
