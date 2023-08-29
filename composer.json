@@ -1,6 +1,6 @@
 {
-    "name": "putuwaw/php-app-vercel",
-    "description": "Deploy PHP Application to Vercel",
+    "name": "fiailiaed/fantastic-train",
+    "description": "Lacrosse Portal - PHP, Deployed on Vercel",
     "type": "project",
     "license": "MIT",
     "require": {
