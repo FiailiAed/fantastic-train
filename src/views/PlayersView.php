@@ -11,14 +11,11 @@ class PlayersView {
 
 	private function view() {
 		$htmlView = <<<HTML
-		<div id="players-div" 
-			class="text-center"
-			hx-get="api/players"
-			hx-trigger="load"
-			hx-target="#players-div"
-			hx-swap="innerHTML"
-		>
-		</div>
+		<button id="" class="" hx-get="api/players" hx-trigger="click" hx-select="#players-table" hx-swap="outerHTML">
+			Load Players...
+		</button>
+		<table class="text-center" id="players-table">
+		</table>
 HTML;
 		return $htmlView;
 	}

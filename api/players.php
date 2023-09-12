@@ -52,16 +52,14 @@ HTML;
 $dbConn->close();
 
 echo <<<HTML
-<div class="text-center">
-	<table>
-		<thead>
-			{$tableHeaders}
-		</thead>
-		<tbody>
-			{$tableRows}
-		</tbody>
-	</table>
-</div>
+<table class="text-center">
+	<thead>
+		{$tableHeaders}
+	</thead>
+	<tbody>
+		{$tableRows}
+	</tbody>
+</table>
 HTML;
 
 ?>
